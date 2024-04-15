@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+}
+.navlist{
+    position: fixed;
+    display: flex;
+    gap: 3.2rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color:black;
+}
+.left-container,.right-container{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background-color:white;
+    width: 70%;
+    padding-left:3rem ;
+    
+
+}
+.right-container{
+    background-color: aqua;
+    width: 30%;
+
+}
+.icons .fa-brands{
+    color:darkslategrey;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.content{
+    margin-left: 4rem;
+}
+.content .intro{
+   font-size: 1.5rem;
+   color: black;
+    
+}
+.content .intro span{
+    color: burlywood;
+
+}
+.content h1{
+    font-size: 4rem;
+    color: burlywood;
+    
+}
+
+.content .icons{
+    font-size: 1.1rem;
+    color: darkslategrey;
+    max-width: 30rem;
+    height: 15vh;
+    
+}
+.content .detail{
+
+    font-size: 1.5rem;
+    color: burlywood;
+    max-width: 38rem;
+    line-height: 1.2;
+    margin: 1.1rem 0 3rem 0;
+}
+.btn-container button{
+    border: .1rem solid aqua;
+    font-size: 1.5rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+button:nth-child(1){
+    background: aqua;
+    color: darkgray;
+}
+button:nth-child(2) a{
+    text-decoration: none;
+    background: transparent;
+    color: aqua;
+    align-items: center;
+
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: aqua;
+
+}
+button:nth-child(2):hover{
+    background: aqua;
+    color: white;
+
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(white, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, aqua 50%, black 50%);
+    width: 38rem;
+}
+.circle:nth-child(2){
+    
+    width: 30rem;
+    background-image: url("imag.jpg") ;
+}
+.resume a{
+        
+    top: 0;
+    left: 0;
+    margin: 35px 0 35px;
+    display:flex;
+    width: 300px;
+    height:100%;
+    background: aqua;
+    border:2px solid aqua;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    padding:10px 20px;
+}
+.resume a:hover{
+    background: transparent;
+    border:5px solid aqua;
+    color:aqua;
+}
